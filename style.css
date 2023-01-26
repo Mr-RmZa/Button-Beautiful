@@ -1,0 +1,52 @@
+.div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn {
+    background-color: #3DD1E7;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #000;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000 solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 460%;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.btn:focus {
+    outline: 0;
+}
+.btn::after {
+    content: '';
+    position: absolute;
+    border: 1px solid #000;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
+.btn:hover::after {
+    bottom: 2px;
+    left: 2px;
+}
+@media (min-width: 768px) {
+    .btn {
+        padding: .75rem 3rem;
+        font-size: 1.25rem;
+    }
+}
